@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: 340 82% 52%;
+    --primary-foreground: 0 0% 100%;
+    --border: 214.3 31.8% 91.4%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-white text-gray-900;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+/* Retro/Neocities styling */
+@layer utilities {
+  .retro-gradient {
+    background: linear-gradient(135deg, #fce4ec 0%, #e1bee7 50%, #c5cae9 100%);
+  }
+  
+  .retro-text-shadow {
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .retro-border {
+    border: 3px solid;
+    border-image: linear-gradient(135deg, #f48fb1, #ce93d8, #90caf9) 1;
+  }
+  
+  @keyframes wiggle {
+    0%, 100% { transform: translateX(0) rotate(0deg); }
+    25% { transform: translateX(-2px) rotate(-1deg); }
+    75% { transform: translateX(2px) rotate(1deg); }
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+  }
+  
+  .text-wiggle {
+    animation: wiggle 2s ease-in-out infinite alternate;
+    display: inline-block;
+    font-size: 22px;
+    color:rgb(2, 97, 175)
+  }
+  
+  .text-float {
+    animation: float 2.5s ease-in-out infinite;
+    display: inline-block;
+  }
+  
+  @keyframes whiteToYellow {
+    0%, 100% { color: #ffffff; }
+    50% { color: #ffff00; }
+  }
+  
+  .text-construction {
+    animation: whiteToYellow 4s ease-in-out infinite;
+    -webkit-text-stroke: 1px black;
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 22px;
+  }
+}
+
+

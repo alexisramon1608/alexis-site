@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Websitty - Neocities Style</title>
+  </head>
+  <body>
+    <div id="root">
+      <!-- Static loading template -->
+      <div style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #fce4ec 0%, #e1bee7 50%, #c5cae9 100%);
+        font-family: 'Roboto', sans-serif;
+        color: #880e4f;
+      ">
+        <div style="text-align: center; padding: 2rem;">
+          <div style="
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            animation: pulse 2s ease-in-out infinite;
+          ">✨</div>
+          <div style="font-size: 1.5rem; font-weight: bold; margin-bottom: 0.5rem;">
+            Loading...
+          </div>
+          <div style="font-size: 0.9rem; opacity: 0.8;">
+            Welcome to my little corner of the internet
+          </div>
+        </div>
+      </div>
+      <style>
+        @keyframes pulse {
+          0%, 100% { opacity: 1; transform: scale(1); }
+          50% { opacity: 0.7; transform: scale(1.1); }
+        }
+      </style>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
+
